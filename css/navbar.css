@@ -1,0 +1,6 @@
+/* file imports */
+@import url(./colors.css);
+
+.navbar{
+    background-color: var(--navbar_bg);
+}
