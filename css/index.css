@@ -1,0 +1,63 @@
+/* file imports */
+@import url(./colors.css);
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
+
+body{
+    font-family: 'Raleway', sans-serif;
+    /* font-style: normal; */
+}
+.navbar{
+    background-color: var(--navbar_bg);
+    font-size: 110%;
+}
+
+#title
+{
+    /* Mountain House Computer Science Pathway */
+    position: absolute;
+    width: 40%;
+    height: 35%;
+    left: 5%;
+    top: 40%;
+
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: bold;
+    /* font-size: 70px; */
+    font-size: 400%;
+    line-height: 130%;
+}
+
+#learnMore {
+    position: absolute;
+    width: 15%;
+    height: 8%;
+    left: 5%;
+    top: 77%;
+
+    background: var(--btn_color);
+    border: 0;
+    border-radius: 9px;
+
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.cardStack {
+    position: absolute;
+    width: 30%;
+    height: 60%;
+    left: 824px;
+    top: 205px;
+
+    /* background: url(undraw_feeling_proud_qne1.png); */
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 26px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+#topCard {
+    padding: 2%;
+}
