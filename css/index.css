@@ -20,7 +20,7 @@ body{
     width: 40%;
     height: 35%;
     left: 5%;
-    top: 45%;
+    top: 40%;
 
     font-family: 'Raleway';
     font-style: normal;
@@ -34,8 +34,8 @@ body{
     position: absolute;
     width: 15%;
     height: 8%;
-    left: 5.7%;
-    top: 85%;
+    left: 5%;
+    top: 77%;
 
     background: var(--btn_color);
     border: 0;
@@ -47,8 +47,8 @@ body{
 
 .cardStack {
     position: absolute;
-    width: 533px;
-    height: 533px;
+    width: 30%;
+    height: 60%;
     left: 824px;
     top: 205px;
 
@@ -57,4 +57,7 @@ body{
     box-sizing: border-box;
     box-shadow: 0px 4px 26px 5px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
+}
+#topCard {
+    padding: 2%;
 }
