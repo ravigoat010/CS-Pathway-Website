@@ -19,7 +19,7 @@ body{
     position: absolute;
     width: 40%;
     height: 35%;
-    left: 7%;
+    left: 10%;
     top: 40%;
 
     font-family: 'Raleway';
@@ -34,7 +34,7 @@ body{
     position: absolute;
     width: 15%;
     height: 8%;
-    left: 7%;
+    left: 10%;
     top: 77%;
 
     background: var(--btn_color);
