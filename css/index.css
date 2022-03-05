@@ -87,11 +87,19 @@ body{
     /* position: absolute; */
     margin-right: 3%;
     height: 408px;
-    left: 54px;
+    /* left: 10%; */
     /* top: 120%; */
     
     box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
+}
+
+.cardText{
+    font-size: 170%;
+    position: absolute;
+    bottom: 5%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
 }
 
 #footer {
