@@ -11,6 +11,7 @@ body{
 .navbar{
     background-color: var(--navbar_bg);
     font-size: 1.25vw;
+    height: 13%;
 }
 
 #title
