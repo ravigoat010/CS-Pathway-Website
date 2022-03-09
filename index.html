@@ -17,6 +17,7 @@
     <!--Navbar-->
     <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="position: absolute; top: 0%; width: 100%;">
         <div class="container-fluid">
+            <!-- home btn/MHHS logo -->
             <a class="navbar-brand " href="./index.html">
                 <img src="./img/mhhs_logo.png" alt="" width="7%" height="7%" class="d-inline-block align-text-top">
             </a>
@@ -35,7 +36,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <!-- the options that will collapse -->
+            <!-- the options that will collapse/pages on the nav bar -->
             <div class="collapse navbar-collapse" id="navbarNav">
 
                 <ul class="navbar-nav text-uppercase" style="position: absolute; right:2%">
@@ -66,39 +67,49 @@
 
     <!-- body of the page -->
     <div class="container mb-5">
-        <!-- header -->
+        <!-- header/says the MHHS CS Pathway -->
         <div class="row row-cols-2">
             <div class="col">
                 <h1 id="title">Mountain House Computer Science Pathway</h1>
-                <button type="button" class="btn btn-dark" id="learnMore">Learn More</button> <!--Need to link this button some where-->
+                <!--Need to link this button some where-->
+                <button type="button" class="btn btn-dark" id="learnMore">Learn More</button> 
             </div>
-            <!-- the two images in the header -->
+
+            <!-- the two stacked images in the header -->
             <div class="col">
                 <img src="https://static.kent.ac.uk/nexus/ems/50.jpg" alt="neon cpu" class="cardStack" id="bottomCard">
                 <img src="./img/undraw_feeling_proud_qne1.svg" alt="A Person stitting on a table" class="cardStack" id="topCard">
             </div>
         </div>
 
+        <!-- just a cir for decoration on the side of the page -->
         <svg width="500" height="500" style="position: absolute; right: 0%; top: 160%;">
             <circle r="200" id="topCir" cx="500" cy="250" fill="#00C2FF" />
         </svg>
+
+        <!-- classes section of the home page
+            * all cards in this section are clickable and will lead you to the appropriate class page -->
         <h2 class="header" style="top: 115%;">"Classes Made for Success"</h2>
         <div class="row row-cols-5 justify-content-center" style="position: absolute; top: 130%; width: 90%">
+            <!-- CSE card -->
             <a href = "./cse.html" class="classInfo col">
                 <img src="./img/undraw_programming_re_kg9v.svg" alt="person on a computer" style="width:100%; padding-top: 45%;">
                 <p class="text-center cardText" style="left: 12%; bottom: 1.25%;">CSE</p>
             </a>
             
+            <!-- AP CSP card -->
             <a href="./csp.html" class="col classInfo">
                 <img src="./img/undraw_add_information_j2wg.svg" alt="2 people on a computer" style="width:100%; padding-top: 45%;">
                 <a class="text-center cardText" href="./csp.html" style="left: 27%;">AP CSP</a>
             </a>
 
+            <!-- AP CSA card -->
             <a href="./csa.html" class="classInfo col">
                 <img src="./img/undraw_pair_programming_re_or4x.svg" alt="2 people on a computer" style="width:100%; padding-top: 45%;">
                 <a class="text-center cardText stretched-link" href="./csa.html" style="left: 50%;">AP CSA</a>
             </a>
 
+            <!-- Adv java/capstone class card -->
             <a href="./advJava.html" class="classInfo col">
                 <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 45%;">
                 <a class="text-center cardText stretched-link" href="./advJava.html" style="right: 7%;">Adv Java</a>
