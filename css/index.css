@@ -10,7 +10,8 @@ body{
 }
 .navbar{
     background-color: var(--navbar_bg);
-    font-size: 110%;
+    font-size: 1.25vw;
+    height: 13%;
 }
 
 #title
@@ -26,7 +27,7 @@ body{
     font-style: normal;
     font-weight: bold;
     /* font-size: 70px; */
-    font-size: 400%;
+    font-size:4vw; /* use vw for any text size to make it responsive*/
     line-height: 130%;
 }
 
@@ -41,7 +42,7 @@ body{
     border: 0;
     border-radius: 9px;
 
-    font-size: 130%;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -79,7 +80,7 @@ body{
     font-family: Raleway;
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3vw;
     line-height: 59px;
     text-align: center;
 }
@@ -93,7 +94,7 @@ body{
 }
 
 .cardText{
-    font-size: 170%;
+    font-size: 1.5vw;
     position: absolute;
     bottom: 5%;
     color: #000000;
