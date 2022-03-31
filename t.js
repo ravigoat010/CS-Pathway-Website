@@ -1,1 +1,0 @@
-document.getElementById("collapse_btn").addEventListener("click", console.log("Click"));
