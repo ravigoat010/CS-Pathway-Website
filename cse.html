@@ -73,7 +73,7 @@
     <section>
 
         <!-- Class Title section -->
-        <div style="margin-top: 1px;">
+        <div style="margin-top: 1px;" id="title-section-desktop">
             <div class="d-flex justify-content-center">
                 <div>
                     <div class="rowFlex">
@@ -87,11 +87,24 @@
                 </div>
             </div>
         </div>
+
+        <!-- MOBILE VERSION -->
+        <div style="margin-top: 1px;" id="title-section-mobile">
+            <div class="d-flex justify-content-center">
+                <center>
+                    <img class="class-symbol-logo" src="/img/class_top_circle logo.svg"></img>
+                        <div style="margin-left: 5%; width: 80vw;">
+                            <h1 class="heading-title">AP CSA</h1>
+                            <p class="heading-subhead" style="margin-top: 1vh;">Mrs. Wone</p>
+                        </div>
+                    </center>
+            </div>
+        </div>
         <!-- Class Title section END -->
 
 
         <!-- Class INFO section -->
-        <div>
+        <div id = "class-stats-section-desktop">
             <div class="rowFlex">
                 <div class="class-stats-box">
                     <center class="stats-info">
@@ -112,6 +125,31 @@
                 <div class="class-info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
 
             </div>
+        </div>
+
+        <!-- MOBILE VERSION -->
+        <div id = "class-stats-section-mobile">
+            <div>
+                    <div class="class-stats-box">
+                        <center class="stats-info">
+                            90+
+                        </center>
+                        <center class="stats-title">
+                            Students
+                        </center>
+    
+                        <center class="stats-info" style="margin-top: 1vh;">
+                            3
+                        </center>
+                        <center class="stats-title">
+                            Classes
+                        </center>
+                    </div>
+    
+                    <div class="class-info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
+
+            </div>
+    
         </div>
         <!-- Class INFO section END-->
 
@@ -293,6 +331,66 @@
         .project-name-tag{
             font-size: 23px;
         }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 300px) {
+            #title-section-desktop{
+                display: none;
+            }
+
+            #title-section-mobile{
+                display: block;
+            }
+
+            #class-stats-section-desktop{
+                display: none;
+            }
+
+            #class-stats-section-mobile{
+                display: block;
+            }
+
+            .class-stats-box{
+                width: 90vw;
+                margin-left: 5vw;
+                margin-top: 5vh;
+                border-radius: 10px;
+                padding-top: 5%;
+            }
+
+            .class-info-box{
+                height: 30vh;
+                width: 90vw;
+                margin-top: 5vh;
+                margin-left: 5vw;
+                padding: 2%;
+                font-size: 20px;
+            }
+        }
+
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #title-section-desktop{
+                display: block;
+            }
+
+            #title-section-mobile{
+                display: none;
+            }
+
+            #class-stats-section-desktop{
+                display: block;
+            }
+
+            #class-stats-section-mobile{
+                display: none;
+            }
+
+        }
+
+
+        
 
     </style>
 
