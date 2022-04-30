@@ -106,3 +106,42 @@
     top: 365%;
     color: white;
 }
+@media screen and (max-width:750px) {
+    #learnMore {top:65%;}
+}
+
+@media screen and (max-width:400px) {
+    #learnMore {
+        top: 89%; 
+        font-size: 3.5vw;
+        width: 80vw;
+    }
+    #title {
+        top:75%;
+        text-align: center;
+        width:80vw;
+
+        font-size: 6vw;
+    }
+    .header {
+        font-size: 6vw;
+    }
+    #topCard {
+        padding: 5%;
+        width:75%;
+        height: 40%;
+        left: 12.5%;
+        top: 205px;
+
+        border: none;
+    }
+    #bottomCard{
+        visibility: hidden;
+    }
+
+    #classText{
+        top:90%;
+    }
+    
+
+}
