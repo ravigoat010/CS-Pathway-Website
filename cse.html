@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Computer Science Essentials</title>
 
     <!--CSS-->
@@ -79,8 +79,8 @@
                     <div class="rowFlex">
                         <img class="class-symbol-logo" src="/img/class_top_circle logo.svg"></img>
 
-                        <div style="margin-left: 5%; width: 10vw;">
-                            <h1 class="heading-title">AP CSA</h1>
+                        <div style="margin-left: 5%; width: 25vw; height: fit-content">
+                            <h1 class="heading-title">Computer Science Essentials</h1>
                             <p class="heading-subhead">Mrs. Wone</p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                 <center>
                     <img class="class-symbol-logo" src="/img/class_top_circle logo.svg"></img>
                         <div style="margin-left: 5%; width: 80vw;">
-                            <h1 class="heading-title">AP CSA</h1>
+                            <h1 class="heading-title">Computer Science Essentials</h1>
                             <p class="heading-subhead" style="margin-top: 1vh;">Mrs. Wone</p>
                         </div>
                     </center>
@@ -157,12 +157,11 @@
         <div>
             <div class="circle-1"></div>
             <div class="circle-2"></div>
-
         </div>
         <!-- CIRCLES END -->
 
         <!-- Projects Section -->
-        <div style="margin-top: 15vh; margin-bottom: 10vh;">
+        <div style="margin-top: 10vh; margin-bottom: 10vh;" id = "projects-section-desktop">
             <center style="font-size: 40px; font-weight: 600;">Projects</center>
 
             <div class="d-flex justify-content-center" style="margin-top: 3vh;">
@@ -219,55 +218,30 @@
 
         <!-- MOBILE VERSION -->
 
-        <div style="margin-top: 15vh; margin-bottom: 10vh;" id = "projects-section">
+        <div style="margin-top: 10vh; margin-bottom: 10vh;" id = "projects-section-mobile">
             <center style="font-size: 40px; font-weight: 600;">Projects</center>
 
-            <div class="d-flex justify-content-center" style="margin-top: 3vh;">
+            <div class="d-flex justify-content-center">
+                <div class="project-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
+                    </div>
+                    <center class="project-name-tag">
+                        Project Name
+                    </center>
+                </div>
 
-                <div class="grid-container">
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+                <div class="project-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
                     </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
+                    <center class="project-name-tag">
+                        Project Name
+                    </center>
                 </div>
 
             </div>
@@ -305,7 +279,7 @@
         }
 
         .heading-subhead{
-            margin-top: -10%;
+            margin-top: -2%;
             font-size: 25px;
         }
 
@@ -343,23 +317,23 @@
 
         .circle-1{
             background-color: #00C2FF;
-            height: 40vh;
-            width: 40vh;
+            height: 30vh;
+            width: 30vh;
             border-radius: 50%;
             z-index: -1;
             position: absolute;
-            left: -10%;
-            top: 10%;
+            left: -20%;
+            top: 5%;
         }
 
         .circle-2{
             background-color: #00C2FF;
-            height: 45vh;
-            width: 45vh;
+            height: 30vh;
+            width: 30vh;
             border-radius: 50%;
             z-index: -1;
             position: absolute;
-            right: -10%;
+            right: -30%;
             top: 90%;
         }
 
@@ -424,6 +398,21 @@
                 padding: 2%;
                 font-size: 20px;
             }
+
+            #projects-section-desktop{
+                display: none;
+            }   
+
+            #projects-section-mobile{
+                display: block;
+            }
+
+            .project-item{
+                width: 90vw;
+                height: 90vw;
+                margin-left: 2vw;
+                margin-top: 3vh;
+            }
         }
 
 
@@ -468,10 +457,23 @@
                 font-size: 20px;
             }
 
+            #projects-section-desktop{
+                display: block;
+            }   
+
+            #projects-section-mobile{
+                display: none;
+            }
+
+            .project-item{
+                width: 15vw;
+                height: 15vw;
+                margin-left: 2vw;
+                margin-top: 3vh;
+            }
         }
 
 
-        
 
     </style>
 
