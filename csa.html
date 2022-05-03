@@ -14,61 +14,62 @@
         <circle r="400" id="topCir" cx="50" cy="-120" fill="#00C2FF" />
     </svg> -->
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5" 
-        style="
-            position: absolute; 
-            top: 0%; 
-            width: 100%;
-            background-color: #000045;
-            font-size: 1.25vw;
-            height: 13%;">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="./index.html">
-                <img src="./img/mhhs_logo.png" alt="" width="7%" height="7%" class="d-inline-block align-text-top">
-            </a>
+    <header style="background-color: #000045">
+        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        <ul class="nav_links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="cse.html"><li>CSE</li></a>
+            <a href="csp.html"><li>AP CSP</li></a>
+            <a href="csa.html"><li>AP CSA</li></a>
+            <a href="advJava.html"><li>Adv Java Topics</li></a>
+            <a href="clubs.html"><li>Clubs</li></a>
 
-            <!-- this don't work rn -->
-            <!-- collapse button -->
-            <button 
-                id="collapse_btn"
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                class="navbar-toggler" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </ul>
 
-            <!-- the options that will collapse -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <button class="btn" style="color: black; font-size: 12px;">
+            Learn More
+        </button>
+    </header>
+   
+    <!--Navbar-->
+    
 
-                <ul class="navbar-nav text-uppercase" style="position: absolute; right:2%">
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="./index.html">home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="./cse.html">CSE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csp.html">AP CSP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./csa.html">AP CSA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " aria-current="page" href="./advJava.html">Adv Java Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./clubs.html">Clubs</a>
-                    </li>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            top: 0;
+        }
 
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
+        .nav_links {
+            list-style: none;
+            margin-top: 10px;
+
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+    </style>
+
+
     
     <div class="container mt-5"></div>
 
