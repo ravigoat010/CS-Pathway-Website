@@ -11,58 +11,70 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
+
+        <!--Navbar-->
+        <header style="background-color: #000045">
+            <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+            <ul class="nav_links">
+                <a href="index.html"><li>Home</li></a>
+                <a href="cse.html"><li>CSE</li></a>
+                <a href="csp.html"><li>AP CSP</li></a>
+                <a href="csa.html"><li>AP CSA</li></a>
+                <a href="advJava.html"><li>Adv Java Topics</li></a>
+                <a href="clubs.html"><li>Clubs</li></a>
+    
+            </ul>
+    
+            <button class="btn" style="color: black; font-size: 12px;">
+                Learn More
+            </button>
+        </header>
+
+        
     <svg width="50%" height="500">
         <circle r="60%" id="topCir" cx="10%" cy="-24%" fill="#00C2FF" />
     </svg>
+
+   
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5" style="position: absolute; top: 0%; width: 100%;">
-        <div class="container-fluid">
-            <!-- home btn/MHHS logo -->
-            <a class="navbar-brand " href="./index.html">
-                <img src="./img/mhhs_logo.png" alt="" width="7%" height="7%" class="d-inline-block align-text-top">
-            </a>
+    
 
-            <!-- this don't work rn -->
-            <!-- collapse button -->
-            <button 
-                id="collapse_btn"
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                class="navbar-toggler" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            test
-            <!-- the options that will collapse/pages on the nav bar -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            top: 0;
+        }
 
-                <ul class="navbar-nav text-uppercase" style="position: absolute; right:2%">
-                    <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="./index.html">home</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="./cse.html">CSE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csp.html">AP CSP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csa.html">AP CSA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./advJava.html">Adv Java Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./clubs.html">Clubs</a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
+        .nav_links {
+            list-style: none;
+            margin-top: 10px;
+
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+    </style>
+
+
     
 
     <!-- body of the page -->
