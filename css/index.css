@@ -53,6 +53,7 @@
     box-shadow: 0px 4px 26px 5px rgba(0, 0, 0, 0.25);
     border-radius: 40px;
 }
+#mobileClass{display: none;}
 #topCard {
     padding: 2%;
     right: 10%;
@@ -107,11 +108,7 @@
     color: white;
 }
 
-@media screen and (max-width:750px) {
-    #learnMore {top:65%;}
-}
-
-@media screen and (max-width:400px) {
+@media screen and (max-width:420px) {
     #learnMore {
         top: 82vh; 
         font-size: 4vw;
@@ -136,16 +133,23 @@
 
         border: none;
     }
-    #bottomCard{
-        visibility: hidden;
-    }
-    #classHeader{
-        top: 10vh;
+    #bottomCard{display: none;}
 
-    }
+    /* makes the classes section for mobile visible */
+    #mobileClass {display: block;}
+    #webClass {display: none;}
+
 
     .cardInfo{
-        padding-bottom: 5vh;
-        height: 20vh;
+        height: 25vh;
     }
+    .cardText{font-size: 5vw;}
+
+    /* hide all circles */
+    .cir{display: none;}
+
+    #clubHeader{top:110vh}
+    #footer{top:270vh}
+
+    .faculty{display: none;}
 }
