@@ -8,6 +8,7 @@
     background-color: var(--navbar_bg);
     font-size: 1.25vw;
     height: 13%;
+    
 }
 
 #title
@@ -108,6 +109,7 @@
     color: white;
 }
 
+
 @media screen and (max-width:420px) {
     #learnMore {
         top: 82vh; 
@@ -153,3 +155,44 @@
 
     .faculty{display: none;}
 }
+
+.blue_circle{
+    background-color: #00C2FF;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    left: -10%;
+    top: 10%;
+    margin-left:3vw;
+    margin-top:40vh;
+
+}
+
+
+.blue_circle_1 {
+    background-color: #00C2FF;
+    height: 40vh;
+    width: 40vh;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    right: -10%;
+    top: 13%;
+   
+
+}
+
+.club_image{
+
+
+    background: url(image.png);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width:50%;
+}
+
+html{
+    overflow-x: hidden;
+}
+
