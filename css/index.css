@@ -153,3 +153,54 @@
 
     .faculty{display: none;}
 }
+
+@media screen and (max-width:920px) {
+     #learnMore {
+        top: 55vh; 
+        font-size: 3vw;
+        width: 20vw;
+    }
+
+    #title{
+        /* font-size:4.5vw; */
+    }
+
+    .header {
+        font-size: 4.7vw;
+    }
+    #topCard {
+         padding: 5%;
+        width:40%;
+        height: 40%;
+        right: 10%;
+        top: 26vh;
+
+        border: none;
+    }
+    #bottomCard {
+        right:5vw;
+        width:40%;
+        height:40%;
+        top: 30vh;
+    }
+
+
+
+    /* makes the classes section for mobile visible */
+    #tabletClass {display: block;}
+    #webClass {display: none;}
+
+
+    .cardInfo{
+        height: 35vh;
+    }
+    .cardText{font-size: 5vw;}
+
+    /* hide all circles */
+    .cir{display: none;}
+
+    #clubHeader{top:110vh}
+    #footer{top:270vh}
+
+    .faculty{display: none;}
+}
