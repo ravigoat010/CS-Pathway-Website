@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,55 +10,155 @@
     <!--CSS-->
     <link href="./css/index.css" rel="stylesheet">
     <link href="./css/clubs.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="./index.html">
-                <img src="./img/mhhs_logo.png" alt="" width="100" height="70" class="d-inline-block align-text-top">
-            </a>
+    <header style="background-color: #000045">
+        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        <ul class="nav_links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="cse.html"><li>CSE</li></a>
+            <a href="csp.html"><li>AP CSP</li></a>
+            <a href="csa.html"><li>AP CSA</li></a>
+            <a href="advJava.html"><li>Adv Java Topics</li></a>
+            <a href="clubs.html"><li>Clubs</li></a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+        </ul>
 
-                <ul class="navbar-nav text-uppercase" style="position: absolute; right:2%">
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="./cse.html">CSE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csp.html">AP CSP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csa.html">AP CSA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./advJava.html">Adv Java Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./clubs.html">Clubs</a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-      </nav>
+        <button class="btn" style="color: black; font-size: 12px;">
+            Learn More
+        </button>
+    </header>
+   
+    <!--Navbar-->
+    
+
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            top: 0;
+        }
+
+        .nav_links {
+            list-style: none;
+            margin-top: 10px;
+
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+    </style>
+
+
 
     <!-- body of the page -->
-    <div class="container">
-        <div class="card" style="width: 18rem;">
-            <img src="./img/robot.png" class="card-img rounded-circle" alt="Robot">
+
+
+    <!-- robot-->
+
+
+    <div class="blue_circle"> </div>
+
+    <div class="blue_circle_1"> </div>
+  
+
+    <div class="container" style="margin-left:10vw;"> 
+
+    <div class="row">
+        <div style="width: 18rem;margin-left:8vw;  ">
+            <img src="https://campussuite-storage.s3.amazonaws.com/prod/1029408/4e54c183-292f-11e7-b792-22000bd8490f/1682972/1cbae470-f7b1-11e7-91fe-0a3f1ac7bfa8/optimizations/2097152" class="card-img rounded-circle club_image" alt="Robot" style="width: 13vw;">
             <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             </div>
+        </div>
+        <div class="col">
+            <h1>Robotics</h1> 
+            <p>Description</p>
         </div>
     </div>
 
-    <!--JS-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+    <!-- computer -->
+    <div class="row" style="position:absolute; right:0; margin-right:8vw;">
+        <div class="col" style="margin-top: 10vh; margin-right:5vw;">
+            <h1>Hackathon</h1>
+            <p>Description</p>
+        </div>
+
+        <div class="col " style = "margin-right:10vw; ">
+            <img src="./img/hackathon.png" class="card-img  rounded-circle club_image" alt="Robot" style="width: 13vw; ">
+            <div class="card-body">
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- video controller -->
+
+
+    <div style=" position:absolute; margin-top:25vh; margin-left:6vw;">
+
+        <div class="row">
+            <div class="col">
+                <img src="./img/video_game.png" class="card-img rounded-circle club_image" alt="Robot" style="width: 13vw">
+            </div>
+
+            <div class="col" style="margin-top: 5vh;">
+                <h1>Esports</h1>
+                <p>Description</p>
+            </div>
+        </div>
+
+    </div>
+
+
+  
+    <div class="row" style="position:absolute; right:0; margin-right:8vw;">
+        <div class="col" style="margin-top: 70vh; margin-right:5vw;">
+            <h1>SkillsUSA</h1>
+            <p>Description</p>
+        </div>
+        <div class="col" style = "margin-right:10vw; margin-top:65vh;">
+            <img src="./img/Skills_USA.png" class="card-img rounded-circle club_image" alt="Robot" style="width: 13vw">
+            <div class="card-body">
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
 </body>
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
 </html>

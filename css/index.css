@@ -8,6 +8,7 @@
     background-color: var(--navbar_bg);
     font-size: 1.25vw;
     height: 13%;
+    
 }
 
 #title
@@ -107,6 +108,7 @@
     top: 365%;
     color: white;
 }
+
 
 @media screen and (max-width:420px) {
     #learnMore {

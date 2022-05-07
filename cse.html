@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Computer Science Essentials</title>
 
     <!--CSS-->
@@ -17,81 +17,94 @@
         <circle r="400" id="topCir" cx="50" cy="-120" fill="#00C2FF" />
     </svg> -->
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark mb-5" 
-        style="
-            width: 100%;
-            background-color: #000045;
-            font-size: 1.25vw;
-            height: 13%;">
-        <div class="container-fluid">
-            <a class="navbar-brand " href="./index.html">
-                <img src="./img/mhhs_logo.png" alt="" width="7%" height="7%" class="d-inline-block align-text-top">
-            </a>
+    <header style="background-color: #000045">
+        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        <ul class="nav_links">
+            <a href="index.html"><li>Home</li></a>
+            <a href="cse.html"><li>CSE</li></a>
+            <a href="csp.html"><li>AP CSP</li></a>
+            <a href="csa.html"><li>AP CSA</li></a>
+            <a href="advJava.html"><li>Adv Java Topics</li></a>
+            <a href="clubs.html"><li>Clubs</li></a>
 
-            <!-- this don't work rn -->
-            <!-- collapse button -->
-            <button 
-                id="collapse_btn"
-                type="button" 
-                data-bs-toggle="collapse" 
-                data-bs-target="#navbarNav" 
-                class="navbar-toggler" 
-                aria-controls="navbarNav" 
-                aria-expanded="false" 
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </ul>
 
-            <!-- the options that will collapse -->
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <button class="btn" style="color: black; font-size: 12px;">
+            Learn More
+        </button>
+    </header>
+   
+    <!--Navbar-->
+    
 
-                <ul class="navbar-nav text-uppercase" style="position: absolute; right:2%">
-                    <li class="nav-item ">
-                        <a class="nav-link" aria-current="page" href="./index.html">home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./cse.html">CSE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csp.html">AP CSP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./csa.html">AP CSA</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./advJava.html">Adv Java Topics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="./clubs.html">Clubs</a>
-                    </li>
-                    
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 30px;
+            top: 0;
+        }
+
+        .nav_links {
+            list-style: none;
+            margin-top: 10px;
+
+        }
+
+        .nav_links a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .nav_links li {
+            display: inline-block;
+            padding: 0px 10px;
+        }
+
+        .btn {
+            height: 40px;
+            width: 100px;
+            border: none;
+            border-radius: 30px;
+            background-color: rgb(255, 255, 255);
+            color: white;
+        }
+    </style>
+
 
     <section>
 
         <!-- Class Title section -->
-        <div style="margin-top: 1px;">
+        <div style="margin-top: 5vh;" id="title-section-desktop">
             <div class="d-flex justify-content-center">
                 <div>
                     <div class="rowFlex">
-                        <img class="class-symbol-logo" src="/img/class_top_circle logo.svg"></img>
-
-                        <div style="margin-left: 5%; width: 10vw;">
-                            <h1 class="heading-title">AP CSA</h1>
+                        <center style=" height: fit-content; ">
+                            <h1 class="heading-title">Computer Science Essentials</h1>
                             <p class="heading-subhead">Mrs. Wone</p>
-                        </div>
+                        </center>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <!-- MOBILE VERSION -->
+        <div style="margin-top: 5vh;" id="title-section-mobile">
+            <div class="d-flex justify-content-center">
+                <center>
+                        <div style="margin-left: 5%; width: 80vw;">
+                            <h1 class="heading-title">Computer Science Essentials</h1>
+                            <p class="heading-subhead" style="margin-top: 1vh;">Mrs. Wone</p>
+                        </div>
+                    </center>
             </div>
         </div>
         <!-- Class Title section END -->
 
 
         <!-- Class INFO section -->
-        <div>
+        <div id = "class-stats-section-desktop">
             <div class="rowFlex">
                 <div class="class-stats-box">
                     <center class="stats-info">
@@ -113,23 +126,48 @@
 
             </div>
         </div>
+
+        <!-- MOBILE VERSION -->
+        <div id = "class-stats-section-mobile">
+            <div>
+                    <div class="class-stats-box">
+                        <center class="stats-info">
+                            90+
+                        </center>
+                        <center class="stats-title">
+                            Students
+                        </center>
+    
+                        <center class="stats-info" style="margin-top: 1vh;">
+                            3
+                        </center>
+                        <center class="stats-title">
+                            Classes
+                        </center>
+                    </div>
+    
+                    <div class="class-info-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.</div>
+
+            </div>
+    
+        </div>
         <!-- Class INFO section END-->
 
         <!-- CIRCLES -->
         <div>
             <div class="circle-1"></div>
             <div class="circle-2"></div>
-
         </div>
         <!-- CIRCLES END -->
 
         <!-- Projects Section -->
-        <div style="margin-top: 15vh; margin-bottom: 10vh;">
+        <div style="margin-top: 10vh; margin-bottom: 10vh;" id = "projects-section-desktop">
             <center style="font-size: 40px; font-weight: 600;">Projects</center>
 
             <div class="d-flex justify-content-center" style="margin-top: 3vh;">
 
                 <div class="grid-container">
+                    <!-- 
                     <div class="grid-item">
                         <div class="project-item">
                             <div class="d-flex justify-content-center">
@@ -140,44 +178,47 @@
                             </center>
                         </div>
                     </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
-    
-                    <div class="grid-item">
-                        <div class="project-item">
-                            <div class="d-flex justify-content-center">
-                                <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
-                            </div>
-                            <center class="project-name-tag">
-                                Project Name
-                            </center>
-                        </div>
-                    </div>
+                    -->
+
+
                 </div>
 
             </div>
 
         </div>
+
+        <!-- MOBILE VERSION -->
+
+        <div style="margin-top: 10vh; margin-bottom: 10vh;" id = "projects-section-mobile">
+            <center style="font-size: 40px; font-weight: 600;">Projects</center>
+
+            <div class="d-flex justify-content-center">
+                <div class="project-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
+                    </div>
+                    <center class="project-name-tag">
+                        Project Name
+                    </center>
+                </div>
+
+            </div>
+
+
+            <div class="d-flex justify-content-center">
+                <div class="project-item">
+                    <div class="d-flex justify-content-center">
+                        <img src="/img/undraw_feeling_proud_qne1.svg" class="project-image"></img>
+                    </div>
+                    <center class="project-name-tag">
+                        Project Name
+                    </center>
+                </div>
+
+            </div>
+
+        </div>
+
         <!-- Projects Section END-->
 
     </section>
@@ -185,6 +226,11 @@
 
 
     <style>
+
+        html{
+            overflow-x: hidden;
+        }
+
         *{
             font-family: 'Roboto', sans-serif;
         }
@@ -204,12 +250,13 @@
         }
 
         .heading-subhead{
-            margin-top: -10%;
+            margin-top: -2%;
             font-size: 25px;
         }
 
         .class-stats-box{
-            height: 30vh;
+            min-height: 30vh;
+            height: fit-content;
             width: 17vw;
             background-color: white;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -241,23 +288,23 @@
 
         .circle-1{
             background-color: #00C2FF;
-            height: 40vh;
-            width: 40vh;
+            height: 30vh;
+            width: 30vh;
             border-radius: 50%;
             z-index: -1;
             position: absolute;
-            left: -10%;
-            top: 10%;
+            left: -20%;
+            top: 5%;
         }
 
         .circle-2{
             background-color: #00C2FF;
-            height: 45vh;
-            width: 45vh;
+            height: 30vh;
+            width: 30vh;
             border-radius: 50%;
             z-index: -1;
             position: absolute;
-            right: -10%;
+            right: -30%;
             top: 90%;
         }
 
@@ -287,6 +334,117 @@
         .project-name-tag{
             font-size: 23px;
         }
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 300px) {
+            #title-section-desktop{
+                display: none;
+            }
+
+            #title-section-mobile{
+                display: block;
+            }
+
+            #class-stats-section-desktop{
+                display: none;
+            }
+
+            #class-stats-section-mobile{
+                display: block;
+            }
+
+            .class-stats-box{
+                width: 90vw;
+                margin-left: 5vw;
+                margin-top: 5vh;
+                border-radius: 10px;
+                padding-top: 7%;
+            }
+
+            .class-info-box{
+                height: 30vh;
+                width: 90vw;
+                margin-top: 3vh;
+                margin-left: 5vw;
+                padding: 4%;
+                font-size: 20px;
+            }
+
+            #projects-section-desktop{
+                display: none;
+            }   
+
+            #projects-section-mobile{
+                display: block;
+            }
+
+            .project-item{
+                width: 90vw;
+                height: 90vw;
+                margin-left: 2vw;
+                margin-top: 3vh;
+            }
+        }
+
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            #title-section-desktop{
+                display: block;
+            }
+
+            #title-section-mobile{
+                display: none;
+            }
+
+            #class-stats-section-desktop{
+                display: block;
+            }
+
+            #class-stats-section-mobile{
+                display: none;
+            }
+
+            .class-stats-box{
+                min-height: 30vh;
+                height: fit-content;
+                width: 17vw;
+                background-color: white;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                margin-left: 5vw;
+                margin-top: 5vh;
+                border-radius: 10px;
+                padding: 2%;
+            }
+
+            .class-info-box{
+                height: 30vh;
+                width: 70vw;
+                margin-top: 5vh;
+                margin-left: 3vw;
+                background: rgba(144, 224, 239, 0.41);
+                border-radius: 10px;
+                padding: 2%;
+                font-size: 20px;
+            }
+
+            #projects-section-desktop{
+                display: block;
+            }   
+
+            #projects-section-mobile{
+                display: none;
+            }
+
+            .project-item{
+                width: 15vw;
+                height: 15vw;
+                margin-left: 2vw;
+                margin-top: 3vh;
+            }
+        }
+
+
 
     </style>
 
