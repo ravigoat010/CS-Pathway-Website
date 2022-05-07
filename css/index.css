@@ -4,11 +4,37 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600&display=swap');
 
-.navbar{
-    background-color: var(--navbar_bg);
-    font-size: 1.25vw;
-    height: 13%;
-    
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    top: 0;
+}
+
+.nav_links {
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+.btn {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(255, 255, 255);
+    color: white;
 }
 
 #title
@@ -55,6 +81,7 @@
     border-radius: 40px;
 }
 #mobileClass{display: none;}
+#tabletClass{display: none;}
 #topCard {
     padding: 2%;
     right: 10%;
