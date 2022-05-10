@@ -1,0 +1,237 @@
+html{
+    overflow-x: hidden;
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+.rowFlex{
+    display: flex;
+}
+
+.class-symbol-logo{
+    height: 10vh;
+    width: 10vh;
+}
+
+.heading-title{
+    font-weight: 600;
+    font-size: 50px;
+}
+
+.heading-subhead{
+    margin-top: -2%;
+    font-size: 25px;
+}
+
+.class-stats-box{
+    min-height: 30vh;
+    height: fit-content;
+    width: 17vw;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 5vw;
+    margin-top: 5vh;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.class-info-box{
+    height: 30vh;
+    width: 70vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
+    background: rgba(144, 224, 239, 0.41);
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 20px;
+}
+
+.stats-info{
+    font-size: 30px;
+}
+
+.stats-title{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.circle-1{
+    background-color: #00C2FF;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    left: -20%;
+    top: 5%;
+}
+
+.circle-2{
+    background-color: #00C2FF;
+    height: 30vh;
+    width: 30vh;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    right: -30%;
+    top: 90%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    
+}
+
+
+.project-item{
+    width: 15vw;
+    height: 15vw;
+    margin-left: 2vw;
+    margin-top: 3vh;
+    background-color: white;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 15px;
+}
+
+.project-image{
+    width: 80%;
+    height: 80%;
+    margin-top: 6%;
+}
+
+.project-name-tag{
+    font-size: 23px;
+}
+
+
+.no-projects-text{
+    font-size: 27px;
+    margin-top: 2vh;
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 300px) {
+    #title-section-desktop{
+        display: none;
+    }
+
+    #title-section-mobile{
+        display: block;
+    }
+
+    #class-stats-section-desktop{
+        display: none;
+    }
+
+    #class-stats-section-mobile{
+        display: block;
+    }
+
+    .class-stats-box{
+        width: 90vw;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        border-radius: 10px;
+        padding-top: 7%;
+    }
+
+    .class-info-box{
+        height: 30vh;
+        width: 90vw;
+        margin-top: 3vh;
+        margin-left: 5vw;
+        padding: 4%;
+        font-size: 20px;
+    }
+
+    #projects-section-desktop{
+        display: none;
+    }   
+
+    #projects-section-mobile{
+        display: block;
+    }
+
+    .project-item{
+        width: 90vw;
+        height: 90vw;
+        margin-left: 2vw;
+        margin-top: 3vh;
+    }
+
+    .no-projects-img{
+        width: 80vw;
+        margin-top: 5vh;
+    
+    }
+    
+}
+
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    .no-projects-img{
+        width: 25vw;
+        margin-top: 5vh;
+    }
+
+    #title-section-desktop{
+        display: block;
+    }
+
+    #title-section-mobile{
+        display: none;
+    }
+
+    #class-stats-section-desktop{
+        display: block;
+    }
+
+    #class-stats-section-mobile{
+        display: none;
+    }
+
+    .class-stats-box{
+        min-height: 30vh;
+        height: fit-content;
+        width: 17vw;
+        background-color: white;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-left: 5vw;
+        margin-top: 5vh;
+        border-radius: 10px;
+        padding: 2%;
+    }
+
+    .class-info-box{
+        height: 30vh;
+        width: 70vw;
+        margin-top: 5vh;
+        margin-left: 3vw;
+        background: rgba(144, 224, 239, 0.41);
+        border-radius: 10px;
+        padding: 2%;
+        font-size: 20px;
+    }
+
+    #projects-section-desktop{
+        display: block;
+    }   
+
+    #projects-section-mobile{
+        display: none;
+    }
+
+    .project-item{
+        width: 15vw;
+        height: 15vw;
+        margin-left: 2vw;
+        margin-top: 3vh;
+    }
+}
+
