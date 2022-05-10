@@ -20,7 +20,7 @@ html{
 
 
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:900px) {
 
   .mobileV{display: block;}
 
@@ -31,7 +31,7 @@ html{
 
 }
 
-@media screen and (min-width:420px) {
+@media screen and (min-width:900px) {
 
   .mobileV{display: none;}
 
