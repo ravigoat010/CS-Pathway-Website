@@ -115,6 +115,15 @@ html{
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) {
+
+    .mobileV{
+        display: block;
+    }
+
+    .desktopV{
+        display: none;
+    }
+
     #title-section-desktop{
         display: none;
     }
@@ -174,6 +183,14 @@ html{
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+
+    .mobileV{
+        display: none;
+    }
+
+    .desktopV{
+        display: block;
+    }
 
     .no-projects-img{
         width: 25vw;
