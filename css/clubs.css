@@ -13,6 +13,11 @@
    
 }
 
+html{
+  overflow-x: hidden;
+  width: 100vw;
+}
+
 
 
 @media screen and (max-width:420px) {
@@ -21,6 +26,17 @@
 
   .desktopV{
     display: none;
+  }
+  .cir{display: none;}
+
+}
+
+@media screen and (min-width:420px) {
+
+  .mobileV{display: none;}
+
+  .desktopV{
+    display: block;
   }
   .cir{display: none;}
 
