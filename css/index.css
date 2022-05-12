@@ -150,10 +150,10 @@ header {
 
 
 
-@media screen and (max-width:450px) {
-    #webclass{display: none;}
-    #tabletclass{display: none;}
-    #mobileclass{display: block;}
+@media screen and (max-width:420px) {
+    #webClass{display: none;}
+    #tabletClass{display: none;}
+    #mobileClass{display: block;}
 
     #learnMore {
         top: 82vh; 
@@ -190,9 +190,13 @@ header {
     .cir{display: none;}
 
     #clubHeader{top:110vh}
-    #footer{top:270vh}
+    #footer{margin-top: 3vh;}
 
-    .faculty{display: none;}
+    #topBtn {
+        width: 10vw;
+        border-radius: 5vw;
+        right: 5vw;
+    }
 }
 
 @media screen and (max-width:950px) {
