@@ -13,7 +13,7 @@
 <body>
   
     <!--Navbar-->
-    <header style="background-color: #000045">
+    <header style="background-color: #000045" id="nav">
         <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
         <ul class="nav_links">
             <a href="index.html"><li>Home</li></a>
@@ -25,9 +25,9 @@
 
         </ul>
 
-        <button class="btn" style="color: black; font-size: 12px;">
-            Learn More
-        </button>
+        <a class="btn" href="#faculty" style="color: black; font-size: 12px; width: fit-content; height: fit-content;">
+            Meet the Faculty
+        </a>
     </header>
    
     <!--Navbar-->
@@ -76,7 +76,7 @@
             <div class="col">
                 <h1 id="title">Mountain House Computer Science Pathway</h1>
                 <!--Need to link this button some where-->
-                <button type="button" class="btn btn-dark" id="learnMore">Learn More</button> 
+                <a type="button" class="btn btn-dark" id="learnMore" href="#faculty">Meet the Faculty</a> 
             </div>
 
             <!-- the two stacked images in the header -->
@@ -147,18 +147,18 @@
                 
             </div>
             
-            <!-- Faculty section-->
-            <h2 class="header faculty" style="top: 260vh;">"Faculty"</h2> 
-            <div class="row row-cols-3 justify-content-center faculty" style="position: absolute; top: 285%; width: 70%; right: 15%;">
+            <!-- Faculty section -->
+            <h2 class="header" style="top: 260vh;" id="faculty">"Faculty"</h2> 
+            <div class="row row-cols-3 justify-content-center" style="position: absolute; top: 285%; width: 70%; right: 15%;">
                 <!-- Mr. Gay card -->
                 <div class="cardInfo col">
-                    <p class="cardText" style="top: 5%; left:26%">Mr. Gay</p>
+                    <p class="cardText" style="top: 5%; margin-left: 5vw;">Mr. William Gay</p>
                     <img src="./img/undraw_businessman_re_mlee.svg" alt="person walking" style="width:95%; padding-top: 25%;">
                 </div>
                 
                 <!-- Ms. Wone card -->
                 <div class="cardInfo col">
-                    <p class="cardText" style="right: 28%; top: 5%;">Ms. Wone</p>
+                    <p class="cardText" style="margin-left: 5vw; top: 5%;">Ms. Khin Wone</p>
                     <img src="./img/undraw_teacher_re_sico.svg" alt="Female person on a computer" style="width:95%; padding-top: 35%; padding-left: 7%;">
                 </div>
                 
@@ -245,17 +245,17 @@
         
             
             <!-- Faculty section-->
-            <h2 class="header" style="top: 240vh;">"Faculty"</h2> <!-- The top will need to be changed after club section is added-->
+            <h2 class="header" style="top: 240vh;" id="faculty">"Faculty"</h2> <!-- The top will need to be changed after club section is added-->
             <div class="row row-cols-3 justify-content-center " style="position: absolute; top: 240vh; width: 100%; padding-left: 10vw;">
                 <!-- Mr. Gay card -->
                 <div class="cardInfo col" style="margin-right: 10vw; ">
-                    <p class="cardText" style="top: 2.5vh; left:26%;">Mr. Gay</p>
+                    <p class="cardText" style="top: 2.5vh; left:26%;">Mr. Willaim Gay</p>
                     <img src="./img/undraw_businessman_re_mlee.svg" alt="person walking" style="width:95%; padding-top: 8vh;">
                 </div>
                 
                 <!-- Ms. Wone card -->
                 <div class="cardInfo col">
-                    <p class="cardText" style="right: 15vw; top: 2.5vh;">Ms. Wone</p>
+                    <p class="cardText" style="right: 15vw; top: 2.5vh;">Ms. Khin Wone</p>
                     <img src="./img/undraw_teacher_re_sico.svg" alt="Female person on a computer" style="width:95%; padding-top: 9vh; padding-left: 7%;">
                 </div>
                 
@@ -266,7 +266,12 @@
     <!--club desc section-->
 		
     
-    
+    <!-- got to top of page btn -->
+    <a href="#nav" class="btn" id="topBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+        </svg>
+    </a>
 
     <!-- footer -->
     <div class="text-center p-3" id="footer">Copyright Lammersville USD</div>
