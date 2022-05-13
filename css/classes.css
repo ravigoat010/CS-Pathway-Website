@@ -38,7 +38,8 @@ html{
 }
 
 .class-info-box{
-    height: 30vh;
+    min-height: 30vh;
+    height: fit-content;
     width: 70vw;
     margin-top: 5vh;
     margin-left: 3vw;
@@ -149,7 +150,8 @@ html{
     }
 
     .class-info-box{
-        height: 30vh;
+        min-height: 30vh;
+        height: fit-content;
         width: 90vw;
         margin-top: 3vh;
         margin-left: 5vw;
