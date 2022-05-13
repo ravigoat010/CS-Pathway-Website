@@ -8,6 +8,7 @@
 
     <!--CSS-->
     <link href="./css/index.css" rel="stylesheet">
+    <!-- <link href="./css/footer.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
@@ -74,9 +75,9 @@
         <!-- header/says the MHHS CS Pathway -->
         <div class="row row-cols-2">
             <div class="col">
-                <h1 id="title">Mountain House Computer Science Pathway</h1>
+                <h1 id="title" >Mountain House Computer Science Pathway</h1>
                 <!--Need to link this button some where-->
-                <a type="button" class="btn btn-dark" id="learnMore" href="#faculty" style="height: fit-content; padding:4vw;">Meet the Faculty</a> 
+                <a type="button" class="btn btn-dark" id="learnMore" href="#faculty" style="height: fit-content; ">Meet the Faculty</a> 
             </div>
 
             <!-- the two stacked images in the header -->
@@ -85,6 +86,10 @@
                 <img src="./img/undraw_feeling_proud_qne1.svg" alt="A Person stitting on a table" class="cardStack" id="topCard">
             </div>
         </div>
+
+        <!-- faculty header - needs to be outside for link to work -->
+        <h2 class="header" id="faculty">"Faculty"</h2> <!-- The top will need to be changed after club section is added-->
+
 
         <!-- just a cir for decoration on the side of the page -->
         <svg width="50%" height="70%" style="position: absolute; right: 0%; top: 160%;" class="cir">
@@ -104,7 +109,7 @@
                 </a>
                 
                 <!-- AP CSP card -->
-                <a href="./csa.html" class="cardInfo col">
+                <a href="./csa.html" class="cardInfo col" >
                     <img src="./img/undraw_add_information_j2wg.svg" alt="2 people on a computer" style="width:100%; padding-top: 45%;">
                     <a class="text-center cardText stretched-link" href="./csa.html" style="left: 27%; bottom: 5%;">AP CSP</a>
                 </a>
@@ -116,7 +121,7 @@
                 </a>
 
                 <!-- Adv java/capstone class card -->
-                <a href="./advJava.html" class="cardInfo col">
+                <a href="./advJava.html" class="cardInfo col" >
                     <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 45%;">
                     <a class="text-center cardText stretched-link" href="./advJava.html" style="right: 7%; bottom: 5%;">Adv Java</a>
                 </a>
@@ -124,14 +129,14 @@
             </div>
 
             <!--circle behind clubs-->
-            <svg width="40%" height="55%" style="position: absolute; left: 7%; top: 205%;">
+            <svg width="40%" height="55%" style="position: absolute; left: 7%; top: 215%;">
                 <circle r="30%" id="topCir" cx="50%" cy="50%" fill="#00C2FF" />
             </svg>
             <div class="row row-cols-3">
 
-                <h2 class="header col" style="top: 221vh; left: 10.5vw; line-height:10vh;" id="clubHeader"> 5+ <br> Clubs</h2>
+                <h2 class="header col" style="top: 230vh; left: 10.5vw; line-height:10vh;" id="clubHeader"> 5+ <br> Clubs</h2>
                 
-                <p class="col text-center" style="font-size: 1.7vw; position: absolute; top: 216%; right: 20%;"> 
+                <p class="col text-center" style="font-size: 1.7vw; position: absolute; top: 226%; right: 20%;"> 
                     There are several clubs at MHHS that tie to the field of computer science. 
                     Each of them explore topics and subjects in-depth within the vast subject.
                     From Hackathon to Esports, there is something for everyone to explore.
@@ -140,23 +145,22 @@
                 </div>
 
                 <!-- just a cir for decoration on the side of the page teachers and footer-->
-                <svg width="27%" height="60%" style="position: absolute; left: 0%; top: 310%;" class="cir">
+                <svg width="27%" height="60%" style="position: absolute; left: 0%; top: 155vw;" class="cir">
                     <circle r="50%" id="topCir" cx="20%" cy="60%" fill="#00C2FF" />
                 </svg>
 
                 <!-- Faculty section-->
-                <h2 class="header" style="top: 230vh;" id="faculty">"Faculty"</h2> <!-- The top will need to be changed after club section is added-->
-                <div class="row row-cols-3 justify-content-center " style="position: absolute; top: 237vh; width: 100%; padding-left: 10vw;">
+                <div class="row row-cols-3 justify-content-center" style="position: absolute; top: 290vh; width: 80%; margin-left: 1.5vw;">
                     <!-- Mr. Gay card -->
-                    <div class="cardInfo col" style="margin-right: 10vw; ">
-                        <p class="cardText" style="top: 2.5vh; left:26%;">Mr. Gay</p>
-                        <img src="./img/undraw_businessman_re_mlee.svg" alt="person walking" style="width:95%; padding-top: 8vh;">
+                    <div class="cardInfo col" style="margin-right: 10vw; height: 35vw;">
+                        <p class="cardText" style="margin-left: 10vw; margin-top: 2vw;">Mr. Gay</p>
+                        <img src="./img/undraw_businessman_re_mlee.svg" alt="person walking" style="width:95%; padding-top: 5vw;">
                     </div>
                     
                     <!-- Ms. Wone card -->
-                    <div class="cardInfo col">
-                        <p class="cardText" style="right: 15vw; top: 2.5vh;">Ms. Wone</p>
-                        <img src="./img/undraw_teacher_re_sico.svg" alt="Female person on a computer" style="width:95%; padding-top: 9vh; padding-left: 7%;">
+                    <div class="cardInfo col" style="height: 35vw;">
+                        <p class="cardText" style="margin-left: 10vw; margin-top: 2vw; ">Ms. Wone</p>
+                        <img src="./img/undraw_teacher_re_sico.svg" alt="Female person on a computer" style="width:95%; padding-top: 15vh; padding-left: 7%;">
                     </div>
                     
                     
@@ -169,43 +173,11 @@
         <!-- TABLET -->
         <div id="tabletClass">
             <h2 class="header" style="top: 85vh;line-height: 4vh;">"Classes Made for Success"</h2>
-            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 100vh; width: 100%; padding-left: 10vw;">
-                <!-- CSE card -->
-                <a href = "./cse.html" class="cardInfo col col-4" style="margin-right: 10vw;">
-                    <img src="./img/undraw_programming_re_kg9v.svg" alt="person on a computer" style="width:100%; padding-top: 8vh;">
-                    <p class="text-center cardText" style="left: 29vw; bottom: 2.5vh;">CSE</p>
-                </a>
-                
-                <!-- AP CSP card -->
-                <a href="./csp.html" class="col cardInfo col-4">
-                    <img src="./img/undraw_add_information_j2wg.svg" alt="2 people on a computer" style="width:100%; padding-top: 8vh">
-                    <a class="text-center cardText" href="./csp.html" style="right: 10vw; bottom: 3.5vh;">AP CSP</a>
-                </a>
-            </div>
-
-            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 150vh; width: 100%; padding-left: 10vw;">
-                <!-- AP CSA card -->
-                <a href="./csa.html" class="cardInfo col col-4" style="margin-right: 10vw;">
-                    <img src="./img/undraw_pair_programming_re_or4x.svg" alt="2 people on a computer" style="width:100%; padding-top: 8vh;">
-                    <a class="text-center cardText stretched-link" href="./csa.html" style="left: 18vw; bottom: 3.5vh;">AP CSA</a>
-                </a>
-    
-                <!-- Adv java/capstone class card -->
-                <a href="./advJava.html" class="cardInfo col col-4">
-                    <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 8vh;">
-                    <a class="text-center cardText stretched-link" href="./advJava.html" style="right: 10vw; bottom: 3.5vh;">Adv Java</a>
-                </a>
-            </div>
-        </div>
-
-        <!-- MOBILE -->
-        <div id="mobileClass" >
-            <h2 class="header" style="top: 100vh;">"Classes Made for Success"</h2>
             <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 115vh; width: 100%; padding-left: 10vw;">
                 <!-- CSE card -->
                 <a href = "./cse.html" class="cardInfo col col-4" style="margin-right: 10vw;">
                     <img src="./img/undraw_programming_re_kg9v.svg" alt="person on a computer" style="width:100%; padding: 5vh 0vh 6vh 0vh;">
-                    <p class="text-center cardText" style="left: 29vw;">CSE</p>
+                    <p class="text-center cardText" style="margin-left: 7vw;">CSE</p>
                 </a>
                 
                 <!-- AP CSP card -->
@@ -219,13 +191,45 @@
                 <!-- AP CSA card -->
                 <a href="./csa.html" class="cardInfo col col-4" style="margin-right: 10vw;">
                     <img src="./img/undraw_pair_programming_re_or4x.svg" alt="2 people on a computer" style="width:100%; padding-top: 5vh;">
-                    <a class="text-center cardText stretched-link" href="./csa.html" style="left: 18vw; bottom: 2.5vh;">AP CSA</a>
+                    <a class="text-center cardText stretched-link" href="./csa.html" style="bottom: 2.5vh; margin-right: 53vw;">AP CSA</a>
                 </a>
     
                 <!-- Adv java/capstone class card -->
                 <a href="./advJava.html" class="cardInfo col col-4">
                     <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 5vh;">
-                    <a class="text-center cardText stretched-link" href="./advJava.html" style="right: 10vw; bottom: 2.5vh;">Adv Java</a>
+                    <a class="text-center cardText stretched-link" href="./advJava.html" style="margin-left: 37vw; bottom: 2.5vh;">Adv Java</a>
+                </a>
+            </div>
+        </div>
+
+        <!-- MOBILE -->
+        <div id="mobileClass" >
+            <h2 class="header" style="top: 100vh;">"Classes Made for Success"</h2>
+            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 115vh; width: 100%; padding-left: 10vw;">
+                <!-- CSE card -->
+                <a href = "./cse.html" class="cardInfo col col-4" style="margin-right: 10vw;">
+                    <img src="./img/undraw_programming_re_kg9v.svg" alt="person on a computer" style="width:100%; padding: 5vh 0vh 6vh 0vh;">
+                    <p class="text-center cardText" style="margin-left: 7vw; bottom: 0.25vw;">CSE</p>
+                </a>
+                
+                <!-- AP CSP card -->
+                <a href="./csp.html" class="col cardInfo col-4">
+                    <img src="./img/undraw_add_information_j2wg.svg" alt="2 people on a computer" style="width:100%; padding-top: 5vh">
+                    <a class="text-center cardText" href="./csp.html" style="right: 10vw; bottom: 2.5vh;">AP CSP</a>
+                </a>
+            </div>
+
+            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 150%; width: 100%; padding-left: 10vw;">
+                <!-- AP CSA card -->
+                <a href="./csa.html" class="cardInfo col col-4" style="margin-right: 10vw;">
+                    <img src="./img/undraw_pair_programming_re_or4x.svg" alt="2 people on a computer" style="width:100%; padding-top: 5vh;">
+                    <a class="text-center cardText stretched-link" href="./csa.html" style="bottom: 2.5vh; margin-right: 53vw;">AP CSA</a>
+                </a>
+    
+                <!-- Adv java/capstone class card -->
+                <a href="./advJava.html" class="cardInfo col col-4">
+                    <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 5vh;">
+                    <a class="text-center cardText stretched-link" href="./advJava.html" style="margin-left: 37vw; bottom: 2.5vh;">Adv Java</a>
                 </a>
             </div>
 
@@ -245,16 +249,15 @@
         
             
             <!-- Faculty section-->
-            <h2 class="header" style="top: 235vh;" id="faculty">"Faculty"</h2> <!-- The top will need to be changed after club section is added-->
             <div class="row row-cols-3 justify-content-center " style="position: absolute; top: 243vh; width: 100%; padding-left: 10vw;">
                 <!-- Mr. Gay card -->
-                <div class="cardInfo col" style="margin-right: 10vw; ">
-                    <p class="cardText" style="top: 2.5vh; left:26%;">Mr. Gay</p>
+                <div class="cardInfo col" style="margin-right: 10vw; height: 30vh;">
+                    <p class="cardText" style="top: 2.5vh; margin-left: 4vw;">Mr. Gay</p>
                     <img src="./img/undraw_businessman_re_mlee.svg" alt="person walking" style="width:95%; padding-top: 8vh;">
                 </div>
                 
                 <!-- Ms. Wone card -->
-                <div class="cardInfo col">
+                <div class="cardInfo col" style="height: 30vh;">
                     <p class="cardText" style="right: 15vw; top: 2.5vh;">Ms. Wone</p>
                     <img src="./img/undraw_teacher_re_sico.svg" alt="Female person on a computer" style="width:95%; padding-top: 9vh; padding-left: 7%;">
                 </div>

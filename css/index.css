@@ -61,9 +61,9 @@ header {
 #learnMore {
     position: absolute;
     width: 15%;
-    height: 8%;
     left: 10%;
     top: 77%;
+    padding: 1vw;
 
     background: var(--btn_color);
     border: 0;
@@ -114,7 +114,7 @@ header {
 .cardInfo {
     /* position: absolute; */
     margin-right: 3%;
-    height: 29vw;
+    height: 25vw;
     background-color: #fff;
     box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
@@ -129,12 +129,13 @@ header {
     font-weight: 700;
 }
 
+#faculty{top: 270vh;}
 
 #footer {
     background-color: var(--navbar_bg);
     width: 100%;
     position: absolute;
-    top: 365%;
+    top: 180vw;
     color: white;
 }
 
@@ -150,7 +151,7 @@ header {
 
 
 
-@media screen and (max-width:420px) {
+@media screen and (max-width:950px) {
     #webClass{display: none;}
     #tabletClass{display: none;}
     #mobileClass{display: block;}
@@ -159,13 +160,15 @@ header {
         top: 82vh; 
         font-size: 6vw;
         width: 80vw;
+        padding: 4vw;
+        margin-top: 3vh;
     }
     #title {
         top: 70vh;
         text-align: center;
         width:80vw;
 
-        font-size: 9vw;
+        font-size: 5.5vw;
     }
     .header {
         font-size: 6vw;
@@ -184,34 +187,39 @@ header {
     .cardInfo{
         height: 25vh;
     }
-    .cardText{font-size: 5vw;}
+    .cardText{
+        font-size: 5vw;
+        margin-left: 10vw; 
+        margin-top: 2vw;
+    }
 
     /* hide all circles */
     .cir{display: none;}
 
     #clubHeader{top:110vh}
-    #footer{margin-top: 3vh;}
+    #footer{top: 280vh;}
 
     #topBtn {
         width: 10vw;
         border-radius: 5vw;
         right: 5vw;
     }
+    #faculty{top:235vh}
 }
 
-@media screen and (max-width:950px) {
-    #webclass{display: none;}
-    #tabletclass{display: block;}
-    #mobileclass{display: none;}
+/* @media screen and (min-width: 450) and (max-width:950px) {
+    #tabletClass{display: block;}
+    #webClass{display: none;}
+    #mobileClass{display: none;}
     #learnMore {
-        top: 82vh; 
-        font-size: 4vw;
-        width: 80vw;
+        top: 82vh;                      
+        font-size: 5vw;
+        width: 100vw;
     }
     #title {
         top: 70vh;
         text-align: center;
-        width:80vw;
+        width:100vw;
 
         font-size: 6vw;
     }
@@ -230,16 +238,16 @@ header {
     #bottomCard{display: none;}
 
     .cardInfo{
-        height: 25vh;
+        height: 20vh;
     }
     .cardText{font-size: 5vw;}
 
     /* hide all circles */
-    .cir{display: none;}
+    /* .cir{display: none;}
 
     #clubHeader{top:110vh}
     #footer{top:270vh}
 
     .faculty{display: none;}
-}
+} */ 
 
