@@ -17,22 +17,24 @@
 <body>
     <!--Navbar-->
     <header style="background-color: #000045">
-        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        <a href="./index.html">
+            <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        </a>
         <ul class="nav_links">
             <a href="index.html">
                 <li>Home</li>
             </a>
             <a href="cse.html">
-                <li>CSE</li>
+                <li>CS Essentials</li>
             </a>
             <a href="csp.html">
-                <li>AP CSP</li>
+                <li>AP CS Principles</li>
             </a>
             <a href="csa.html">
                 <li>AP CSA</li>
             </a>
             <a href="advJava.html">
-                <li>Adv Java Topics</li>
+                <li>CS Capstone</li>
             </a>
             <a href="clubs.html">
                 <li>Clubs</li>
@@ -85,6 +87,11 @@
             background-color: rgb(255, 255, 255);
             color: white;
         }
+        .clubInfo{
+            text-decoration: none;
+            color: black;
+        }
+        .clubInfo:hover{color: black;}
     </style>
 
 
@@ -105,7 +112,7 @@
 
 
         <div class="desktopV">
-            <div class="row">
+            <a class="row clubInfo" href="https://www.vexrobotics.com/" target="_blank">
                 <div style="width: 18rem;margin-left:8vw;margin-top:8vh;  ">
                     <img src="https://campussuite-storage.s3.amazonaws.com/prod/1029408/4e54c183-292f-11e7-b792-22000bd8490f/1682972/1cbae470-f7b1-11e7-91fe-0a3f1ac7bfa8/optimizations/2097152"
                         class="card-img rounded-circle club_image" alt="Robot" style="width: 13vw;">
@@ -124,7 +131,7 @@
                         and Computer Science can be applied in real life. </p>
                 </div>
 
-            </div>
+            </a>
 
 
             <div class="d-flex justify-content-center desktopV" style="margin-right: -15vw;">
@@ -180,7 +187,7 @@
 
 
             <!-- Skills USA -->
-            <div class="d-flex justify-content-center" style="margin-right: -15vw; margin-top: 30vh;">
+            <a class="d-flex justify-content-center clubInfo" style="margin-right: -15vw; margin-top: 30vh;" href="https://www.skillsusaca.org/state" target="_blank">
                 <div class="row">
 
                     <div class="col" style="margin-top:8vh;">
@@ -201,7 +208,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
 
 
         </div>
@@ -213,7 +220,7 @@
         <div class="mobileV">
 
             <!-- Robotics Mobile -->
-            <section>
+            <a class="clubInfo" href="https://www.vexrobotics.com/" target="_blank">
                 <div style="width: 80vw; margin-left:10vw; margin-top:2vh;  ">
                     <img src="https://campussuite-storage.s3.amazonaws.com/prod/1029408/4e54c183-292f-11e7-b792-22000bd8490f/1682972/1cbae470-f7b1-11e7-91fe-0a3f1ac7bfa8/optimizations/2097152"
                         class="card-img rounded-circle club_image" alt="Robot" style="width: 50vw; margin-left:4vw; ">
@@ -229,7 +236,7 @@
                         club is a great way to bring brilliant minds together and is a great example of how Engineering
                         and Computer Science can be applied in real life. </p>
                 </div>
-            </section>
+            </a>
 
 
             <!-- Hackathon Mobile -->
@@ -289,7 +296,7 @@
 
 
             <!-- Skills USA Mobile-->
-            <section>
+            <a class="clubInfo" target="_blank" href="https://www.skillsusaca.org/state">
 
 
                 <div class="d-flex justify-content-center">
@@ -309,7 +316,7 @@
                     </div>
                 </div>
 
-            </section>
+            </a>
 
         </div>
 

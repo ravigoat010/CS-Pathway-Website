@@ -99,14 +99,16 @@ html{
 
 .project-image{
     width: 80%;
+    
     height: 80%;
     margin-top: 6%;
 }
+.phone{max-width: 5.3vw;}
+.website{margin-top: 3vw;}
 
 .project-name-tag{
     font-size: 23px;
 }
-
 
 .no-projects-text{
     font-size: 27px;
