@@ -86,28 +86,16 @@ html{
     
 }
 
-
-.project-item{
-    width: 15vw;
-    height: 15vw;
-    margin-left: 2vw;
-    margin-top: 3vh;
-    background-color: white;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-radius: 15px;
-}
-
 .project-image{
     width: 80%;
-    
     height: 80%;
     margin-top: 6%;
 }
-.phone{max-width: 5.3vw;}
-.website{margin-top: 3vw;}
 
 .project-name-tag{
     font-size: 23px;
+    margin-top: auto;
+    margin-bottom: 5%;
 }
 
 .no-projects-text{
@@ -174,13 +162,23 @@ html{
         height: 90vw;
         margin-left: 2vw;
         margin-top: 3vh;
+        display: flex;
+        border-radius: 10px;
+        flex-direction: column;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     }
 
     .no-projects-img{
         width: 80vw;
         margin-top: 5vh;
-    
     }
+
+    .project-image{
+        margin-top: 5%;
+    }
+
+    .phone{max-width: 32vw;}
+    .website{max-width: 80vw; margin-top: 10%;}
     
 }
 
@@ -254,5 +252,11 @@ html{
         margin-left: 2vw;
         margin-top: 3vh;
     }
+
+    
+    .phone{max-width: 5.3vw;}
+    .website{margin-top: 3vw;}
+
+
 }
 
