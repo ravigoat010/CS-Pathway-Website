@@ -157,11 +157,11 @@ header {
     #mobileClass{display: block;}
 
     #learnMore {
-        top: 82vh; 
+        top: 170vw; 
         font-size: 6vw;
         width: 80vw;
         padding: 4vw;
-        margin-top: 3vh;
+        /* margin-top: 3vh; */
     }
     #title {
         top: 70vh;

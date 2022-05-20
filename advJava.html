@@ -5,12 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-    <title>Advanced Java Topics</title>
+    <title>CS Capstone</title>
+    <link rel="stylesheet" href="./css/navbar.css">
+
 
     <!--CSS-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="./css/footer.css" rel="stylesheet">
     <link href="./css/classes.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,72 +35,67 @@
             <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
         </a>
         <ul class="nav_links">
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="cse.html">
-                <li>CS Essentials</li>
-            </a>
-            <a href="csp.html">
-                <li>AP CS Principles</li>
-            </a>
-            <a href="csa.html">
-                <li>AP CSA</li>
-            </a>
-            <a href="advJava.html">
-                <li>CS Capstone</li>
-            </a>
-            <a href="clubs.html">
-                <li>Clubs</li>
-            </a>
+            <a href="index.html" style="text-decoration: none;"><li>Home</li></a>
+            <a href="cse.html"><li>CSE</li></a>
+            <a href="csp.html"><li>AP CSP</li></a>
+            <a href="csa.html"><li>AP CSA</li></a>
+            <a href="advJava.html"><li>CS Capstone</li></a>
+            <a href="clubs.html"><li>Clubs</li></a
 
         </ul>
 
-        <button class="btn" style="color: black; font-size: 12px;">
-            Learn More
-        </button>
+        <div class="dropdowndiv">
+            <div class="dropdown">
+                <span><i class="fa-solid fa-bars" style="color: white; font-size: 40px;"></i></span>
+                <div class="dropdown-content">
+                    <a href="index.html" style="text-decoration: none;"><li>Home</li></a>
+                    <a href="cse.html"><li>CSE</li></a>
+                    <a href="csp.html"><li>AP CSP</li></a>
+                    <a href="csa.html"><li>AP CSA</li></a>
+                    <a href="advJava.html"><li>Adv Java Topics</li></a>
+                    <a href="clubs.html"><li>Clubs</li></a>
+
+                </div>
+            </div>
+        </div>
     </header>
-
-    <!--Navbar-->
-
-
-    <style>
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            top: 0;
-        }
-
-        .nav_links {
-            list-style: none;
-            margin-top: 10px;
-
-        }
-
-        .nav_links a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav_links li {
-            display: inline-block;
-            padding: 0px 10px;
-        }
-
-        .btn {
-            height: 40px;
-            width: 100px;
-            border: none;
-            border-radius: 30px;
-            background-color: rgb(255, 255, 255);
-            color: white;
-        }
-    </style>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav> -->
 
     </div>
-    </nav>
 
     <!-- DESKTOP VERSION -->
     <section class="desktopV">
@@ -248,7 +247,7 @@
             <div class="d-flex justify-content-center">
                 <center>
                     <div style="margin-left: 5%; width: 80vw;">
-                        <h1 class="heading-title">Advance Java Topics</h1>
+                        <h1 class="heading-title">Computer Science Capstone</h1>
                         <p class="heading-subhead" style="margin-top: 1vh;"></p>
                     </div>
                 </center>

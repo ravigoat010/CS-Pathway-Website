@@ -7,7 +7,9 @@
     <title>Home</title>
 
     <!--CSS-->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link href="./css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- <link href="./css/footer.css" rel="stylesheet"> -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
@@ -15,40 +17,157 @@
   
     <!--Navbar-->
     <header style="background-color: #000045" id="nav">
-        <a href="./index.html">
-            <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
-        </a>
+        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
         <ul class="nav_links">
-            <a href="index.html">
-                <li>Home</li>
-            </a>
-            <a href="cse.html">
-                <li>CS Essentials</li>
-            </a>
-            <a href="csp.html">
-                <li>AP CS Principles</li>
-            </a>
-            <a href="csa.html">
-                <li>AP CSA</li>
-            </a>
-            <a href="advJava.html">
-                <li>CS Capstone</li>
-            </a>
-            <a href="clubs.html">
-                <li>Clubs</li>
-            </a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="cse.html"><li>CSE</li></a>
+            <a href="csp.html"><li>AP CSP</li></a>
+            <a href="csa.html"><li>AP CSA</li></a>
+            <a href="advJava.html"><li>CS Capstone</li></a>
+            <a href="clubs.html"><li>Clubs</li></a>
 
         </ul>
 
-        <a class="btn" href="#faculty" style="color: black; font-size: 12px; width: fit-content; height: fit-content;">
+            <div class="dropdowndiv">
+                <div class="dropdown">
+                    <span><i class="fa-solid fa-bars" style="color: white; font-size: 40px;"></i></span>
+                    <div class="dropdown-content">
+                        <a href="index.html" style="text-decoration: none;"><li>Home</li></a>
+                        <a href="cse.html"><li>CSE</li></a>
+                        <a href="csp.html"><li>AP CSP</li></a>
+                        <a href="csa.html"><li>AP CSA</li></a>
+                        <a href="advJava.html"><li>CS Capstone</li></a>
+                        <a href="clubs.html"><li>Clubs</li></a>
+
+                    </div>
+                  </div>
+            </div>
+
+        <a class="btn btn-light" style="color: black; font-size: 12px; width: fit-content; height: fit-content;" id="navBtn" href="#faculty">
             Meet the Faculty
         </a>
     </header>
+    <svg width="50%" height="500" class="cir">
+        <circle r="22vw" id="topCir" cx="10%" cy="-24%" fill="#00C2FF" />
+    </svg>
+    <!--Navbar-->
+ 
    
     <!--Navbar-->
     
 
     <style>
+
+        @media only screen and (max-width: 600px) {
+            .nav_links {
+                visibility: hidden;
+            }
+
+            #navBtn {
+                visibility: hidden;
+            }
+
+            .dropdowndiv {
+                visibility: initial;
+            }
+
+            header {
+                height: 10vh;
+            }
+        }
+
+
+        /* Small devices (portrait tablets and large phones, 600px and up) */
+        @media only screen and (min-width: 600px) {
+            .nav_links {
+                visibility: hidden;
+            }
+
+            #navBtn {
+                visibility: hidden;
+            }
+
+            .dropdowndiv {
+                visibility: initial;
+            }
+
+            header {
+                height: 10vh;
+            }
+        } 
+
+        /* Medium devices (landscape tablets, 768px and up) */
+        @media only screen and (min-width: 768px) {
+            .nav_links {
+                visibility: initial;
+            }
+
+            #navBtn {
+                visibility: initial;
+            }
+
+            .dropdowndiv {
+                visibility: hidden;
+            }
+
+            header {
+                height: 10vh;
+            }
+        } 
+
+        /* Large devices (laptops/desktops, 992px and up) */
+        @media only screen and (min-width: 992px) {
+            .nav_links {
+                visibility: initial;
+            }
+
+            #navBtn {
+                visibility: initial;
+            }
+
+            .dropdowndiv {
+                visibility: hidden;
+            }
+        } 
+
+        /* Extra large devices (large laptops and desktops, 1200px and up) */
+        @media only screen and (min-width: 1200px) {
+            .nav_links {
+                visibility: initial;
+            }
+
+            #navBtn {
+                visibility: initial;
+            }
+
+            .dropdowndiv {
+                visibility: hidden;
+            }
+        }
+
+            .dropdown {
+            position: relative;
+            display: inline-block;
+            }
+
+            .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            padding: 12px 16px;
+            z-index: 1;
+            }
+
+            .dropdown-content a {
+                text-decoration: none;
+                list-style: none;
+            }
+
+            .dropdown:hover .dropdown-content {
+            display: block;
+            }
         header {
             display: flex;
             justify-content: space-between;
@@ -60,6 +179,7 @@
         .nav_links {
             list-style: none;
             margin-top: 10px;
+            margin-left: 10vw;
 
         }
 
@@ -73,7 +193,7 @@
             padding: 0px 10px;
         }
 
-        .btn {
+        .navBtn {
             height: 40px;
             width: 100px;
             border: none;
@@ -82,6 +202,7 @@
             color: white;
         }
     </style>
+
   
 
     <!-- body of the page -->
@@ -285,7 +406,7 @@
     
     <!-- got to top of page btn -->
     <a href="#nav" class="btn" id="topBtn">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
         </svg>
     </a>
