@@ -1,12 +1,11 @@
-/* .card{
-    flex-direction: row;
-    align-items: center;
-  }
-  
-.card-img {
-    width: 50px;
-    border-radius: 50%;
-} */
+/* prevents the club info text from changing to default link styling */
+.clubInfo{
+  text-decoration: none;
+  color: black;
+}
+
+/* previous stylying remains the same even on hover */
+.clubInfo:hover{color: black;}
 
 .ravi{
    position:fixed;
@@ -19,7 +18,7 @@ html{
 }
 
 
-
+/* display for phone screens */
 @media screen and (max-width:900px) {
 
   .mobileV{display: block;}
@@ -31,6 +30,7 @@ html{
 
 }
 
+/* display for tablets */
 @media screen and (min-width:900px) {
 
   .mobileV{display: none;}

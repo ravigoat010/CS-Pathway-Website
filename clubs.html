@@ -6,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
-    <title>Home</title>
-    <link rel="stylesheet" href="./css/navbar.css">
-
-
+    <title>Clubs</title>
+    
+    
     <!--CSS-->
+    <link rel="stylesheet" href="./css/navbar.css">
     <link href="./css/clubs.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -20,11 +20,13 @@
 
 <body>
     <!--Navbar-->
-    <!--Navbar-->
     <header style="background-color: #000045">
+        <!-- mustange logo  -->
         <a href="./index.html">
             <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
         </a>
+
+        <!-- navbar links -->
         <ul class="nav_links">
             <a href="index.html"><li>Home</li></a>
             <a href="cse.html"><li>CSE</li></a>
@@ -35,6 +37,7 @@
 
         </ul>
 
+            <!-- dropdown menu  -->
             <div class="dropdowndiv">
                 <div class="dropdown">
                     <span style="margin-right: 15vw"><i class="fa-solid fa-bars" style="color: white; font-size: 40px;"></i></span>
@@ -50,181 +53,25 @@
                   </div>
             </div>
 
-        <div   style="color: black; font-size: 12px; background-color: transparent; ">
-            
-        </div>
     </header>
-    
-    <!--Navbar-->
- 
-   
-    <!--Navbar-->
-    
 
-    <style>
-
-        @media only screen and (max-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            .btn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-        }
-
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            .btn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-        } 
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        } 
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        } 
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        }
-
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            z-index: 1;
-            }
-
-            .dropdown-content a {
-                text-decoration: none;
-                list-style: none;
-            }
-
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            top: 0;
-        }
-
-        .nav_links {
-            list-style: none;
-            margin-top: 10px;
-            margin-right: 15vw;
-
-
-        }
-
-        .nav_links a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav_links li {
-            display: inline-block;
-            padding: 0px 10px;
-        }
-
-        .btn {
-            height: 40px;
-            width: 100px;
-            border: none;
-            border-radius: 30px;
-            background-color: rgb(255, 255, 255);
-            color: white;
-        }
-    </style>
-
-    <style>
-
-        .clubInfo{
-                    text-decoration: none;
-                    color: black;
-                }
-        .clubInfo:hover{color: black;}
-
-    </style>
-
-
-
-    <!-- body of the page -->
-
-
-    <!-- robot-->
-
-
+    <!-- decoration -->
     <div class="blue_circle  cir" style="left: -10%; top: 10%; margin-left:3vw; margin-top:40vh;"> </div>
 
     <div class="blue_circle cir" style="right: -10%; top: 13%;"> </div>
 
+    <!-- 
+        ** Note
+        * As of right now all elements need to be input 2 times
+        * one as the desktop version and one as mobile
+        * this allows the website to be reponsive
+        * if any of the clubs get thier own website in the future please replace the links in both sections
+     -->
 
     <div class="container" style="margin-left:10vw; margin-right: 10vw;">
 
-
-
         <div class="desktopV">
+            <!-- vex robotics card -->
             <a class="row clubInfo" href="https://www.vexrobotics.com/" target="_blank">
                 <div style="width: 18rem;margin-left:8vw;margin-top:8vh;  ">
                     <img src="https://campussuite-storage.s3.amazonaws.com/prod/1029408/4e54c183-292f-11e7-b792-22000bd8490f/1682972/1cbae470-f7b1-11e7-91fe-0a3f1ac7bfa8/optimizations/2097152"
@@ -246,8 +93,10 @@
 
             </a>
 
+            <!-- hackathon info card -->
 
-            <div class="d-flex justify-content-center desktopV" style="margin-right: -15vw;">
+            <!-- if in the future hackathon club get a website replace the div with an a tag and add the link -->
+            <div class="d-flex justify-content-center desktopV" style="margin-right: -15vw;"> 
                 <div class="row">
 
                     <div class="col" style="margin-top:8vh;">
@@ -460,8 +309,6 @@
 
     <!-- footer -->
     <div class="text-center p-3" id="footer">Copyright © Lammersville USD 2022. All Rights Reserved.</div>
-
-
 
 
 </body>

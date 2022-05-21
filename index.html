@@ -17,7 +17,7 @@
   
     <!--Navbar-->
     <header style="background-color: #000045" id="nav">
-        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;">
+        <img src="./img/mhhs_logo.png" alt="" style="width: 90px;" id="homeLogo">
         <ul class="nav_links">
             <a href="index.html"><li>Home</li></a>
             <a href="cse.html"><li>CSE</li></a>
@@ -28,7 +28,8 @@
 
         </ul>
 
-            <div class="dropdowndiv">
+            <!-- drop down div menu for smaller screens -->
+            <div class="dropdowndiv" id="dropdowndiv">
                 <div class="dropdown">
                     <span><i class="fa-solid fa-bars" style="color: white; font-size: 40px;"></i></span>
                     <div class="dropdown-content">
@@ -43,167 +44,21 @@
                   </div>
             </div>
 
-        <a class="btn btn-light" style="color: black; font-size: 12px; width: fit-content; height: fit-content;" id="navBtn" href="#faculty">
-            Meet the Faculty
+        <!-- allows user to scroll to the faculty section of the home page -->
+        <a class="btn btn-light" style="
+            color: black; 
+            font-size: 12px; 
+            width: fit-content; 
+            height: fit-content; 
+            border-radius: 5vw;" id="navBtn" href="#faculty">
+            <b>Meet the Faculty</b>
         </a>
     </header>
+
+    <!-- cir for decoration -->
     <svg width="50%" height="500" class="cir">
         <circle r="22vw" id="topCir" cx="10%" cy="-24%" fill="#00C2FF" />
     </svg>
-    <!--Navbar-->
- 
-   
-    <!--Navbar-->
-    
-
-    <style>
-
-        @media only screen and (max-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            #navBtn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-
-            header {
-                height: 10vh;
-            }
-        }
-
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            #navBtn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-
-            header {
-                height: 10vh;
-            }
-        } 
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            #navBtn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-
-            header {
-                height: 10vh;
-            }
-        } 
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            #navBtn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        } 
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            #navBtn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        }
-
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            z-index: 1;
-            }
-
-            .dropdown-content a {
-                text-decoration: none;
-                list-style: none;
-            }
-
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            top: 0;
-        }
-
-        .nav_links {
-            list-style: none;
-            margin-top: 10px;
-            margin-left: 10vw;
-
-        }
-
-        .nav_links a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav_links li {
-            display: inline-block;
-            padding: 0px 10px;
-        }
-
-        .navBtn {
-            height: 40px;
-            width: 100px;
-            border: none;
-            border-radius: 30px;
-            background-color: rgb(255, 255, 255);
-            color: white;
-        }
-    </style>
-
-  
 
     <!-- body of the page -->
     <div class="container mb-5 just">
@@ -211,7 +66,7 @@
         <div class="row row-cols-2">
             <div class="col">
                 <h1 id="title" >Mountain House Computer Science Pathway</h1>
-                <!--Need to link this button some where-->
+                <!--scrolls to the faculty info of the page-->
                 <a type="button" class="btn btn-dark" id="learnMore" href="#faculty" style="height: fit-content; ">Meet the Faculty</a> 
             </div>
 
@@ -233,8 +88,9 @@
 
         <!-- classes section of the home page
             * all cards in this section are clickable and will lead you to the appropriate class page -->
-        <!-- WEB -->
+        <!-- WEB version -->
         <div id="webClass">
+            <!-- classes section -->
             <h2 class="header" style="top: 110vh;">"Classes Made for Success"</h2>
             <div class="row row-cols-5 justify-content-center classInfo" style="position: absolute; top: 135vh; width: 90%; left: 7%;">
                 <!-- CSE card -->
@@ -268,7 +124,7 @@
                 <circle r="30%" id="topCir" cx="50%" cy="50%" fill="#00C2FF" />
             </svg>
             <div class="row row-cols-3">
-
+                <!-- club section -->
                 <h2 class="header col" style="top: 230vh; left: 10.5vw; line-height:10vh;" id="clubHeader"> 5+ <br> Clubs</h2>
                 
                 <p class="col text-center" style="font-size: 1.7vw; position: absolute; top: 226%; right: 20%;"> 
@@ -305,40 +161,11 @@
             
         </div>
 
-        <!-- TABLET -->
-        <div id="tabletClass">
-            <h2 class="header" style="top: 85vh;line-height: 4vh;">"Classes Made for Success"</h2>
-            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 115vh; width: 100%; padding-left: 10vw;">
-                <!-- CSE card -->
-                <a href = "./cse.html" class="cardInfo col col-4" style="margin-right: 10vw;">
-                    <img src="./img/undraw_programming_re_kg9v.svg" alt="person on a computer" style="width:100%; padding: 5vh 0vh 6vh 0vh;">
-                    <p class="text-center cardText" style="margin-left: 7vw;">CSE</p>
-                </a>
-                
-                <!-- AP CSP card -->
-                <a href="./csp.html" class="col cardInfo col-4">
-                    <img src="./img/undraw_add_information_j2wg.svg" alt="2 people on a computer" style="width:100%; padding-top: 5vh">
-                    <a class="text-center cardText" href="./csp.html" style="right: 10vw; bottom: 2.5vh;">AP CSP</a>
-                </a>
-            </div>
+        
 
-            <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 150%; width: 100%; padding-left: 10vw;">
-                <!-- AP CSA card -->
-                <a href="./csa.html" class="cardInfo col col-4" style="margin-right: 10vw;">
-                    <img src="./img/undraw_pair_programming_re_or4x.svg" alt="2 people on a computer" style="width:100%; padding-top: 5vh;">
-                    <a class="text-center cardText stretched-link" href="./csa.html" style="bottom: 2.5vh; margin-right: 53vw;">AP CSA</a>
-                </a>
-    
-                <!-- Adv java/capstone class card -->
-                <a href="./advJava.html" class="cardInfo col col-4">
-                    <img src="./img/undraw_mobile_application_mr-4-r.svg" alt="person leaning on a phone" style="width:100%; padding-top: 5vh;">
-                    <a class="text-center cardText stretched-link" href="./advJava.html" style="margin-left: 37vw; bottom: 2.5vh;">Adv Java</a>
-                </a>
-            </div>
-        </div>
-
-        <!-- MOBILE -->
+        <!-- MOBILE & tablet version of home page elements-->
         <div id="mobileClass" >
+            <!-- classes section  -->
             <h2 class="header" style="top: 100vh;">"Classes Made for Success"</h2>
             <div class="row row-cols-3 justify-content-center classInfo" style="position: absolute; top: 115vh; width: 100%; padding-left: 10vw;">
                 <!-- CSE card -->
@@ -373,6 +200,8 @@
                 <circle r="17vw" id="topCir" cx="50%" cy="50%" fill="#00C2FF" />
             </svg>
 
+
+            <!-- clubs section  -->
             <h2 class="header" style="top: 190vh; left: 27vw;" id="clubHeader"> 5+ <br> Clubs</h2>
             
             <p class="text-center" style="font-size: 4.5vw; position: absolute; top: 205vh; padding: 5vw;"> 
@@ -404,7 +233,7 @@
     <!--club desc section-->
 		
     
-    <!-- got to top of page btn -->
+    <!-- click to go to top of page btn -->
     <a href="#nav" class="btn" id="topBtn">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-chevron-up" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
