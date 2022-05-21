@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Header -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -14,6 +15,7 @@
     <link href="./css/footer.css" rel="stylesheet">
     <link href="./css/classes.css" rel="stylesheet">
 
+    <!-- CDN Imports -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;800&family=Raleway:wght@400;600;700&family=Roboto:wght@100;400;900&display=swap"
@@ -25,9 +27,7 @@
 </head>
 
 <body>
-    <!-- <svg width="500" height="500">
-        <circle r="400" id="topCir" cx="50" cy="-120" fill="#00C2FF" />
-    </svg> -->
+
     <!--Navbar-->
     <header style="background-color: #000045">
         <a href="./index.html">
@@ -43,6 +43,7 @@
 
         </ul>
 
+            <!-- Nav bar dropdown -->
             <div class="dropdowndiv">
                 <div class="dropdown">
                     <span><i class="fa-solid fa-bars" style="color: white; font-size: 40px;"></i></span>
@@ -62,149 +63,10 @@
             
         </div>
     </header>
-   
-    <!--Navbar-->
- 
-   
-    <!--Navbar-->
+    <!-- Navbar end -->
     
 
-    <style>
-
-        @media only screen and (max-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            .btn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-        }
-
-
-        /* Small devices (portrait tablets and large phones, 600px and up) */
-        @media only screen and (min-width: 600px) {
-            .nav_links {
-                visibility: hidden;
-            }
-
-            .btn {
-                visibility: hidden;
-            }
-
-            .dropdowndiv {
-                visibility: initial;
-            }
-        } 
-
-        /* Medium devices (landscape tablets, 768px and up) */
-        @media only screen and (min-width: 768px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        } 
-
-        /* Large devices (laptops/desktops, 992px and up) */
-        @media only screen and (min-width: 992px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        } 
-
-        /* Extra large devices (large laptops and desktops, 1200px and up) */
-        @media only screen and (min-width: 1200px) {
-            .nav_links {
-                visibility: initial;
-            }
-
-            .btn {
-                visibility: initial;
-            }
-
-            .dropdowndiv {
-                visibility: hidden;
-            }
-        }
-
-            .dropdown {
-            position: relative;
-            display: inline-block;
-            }
-
-            .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            padding: 12px 16px;
-            z-index: 1;
-            }
-
-            .dropdown-content a {
-                text-decoration: none;
-                list-style: none;
-            }
-
-            .dropdown:hover .dropdown-content {
-            display: block;
-            }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 30px;
-            top: 0;
-        }
-
-        .nav_links {
-            list-style: none;
-            margin-top: 10px;
-            margin-left: 10vw;
-
-
-        }
-
-        .nav_links a {
-            text-decoration: none;
-            color: white;
-        }
-
-        .nav_links li {
-            display: inline-block;
-            padding: 0px 10px;
-        }
-
-        .btn {
-            height: 40px;
-            width: 100px;
-            border: none;
-            border-radius: 30px;
-            background-color: rgb(255, 255, 255);
-            color: white;
-        }
-    </style>
-
+    <!-- DESKTOP VERSION -->
     <section class="desktopV">
 
         <!-- Class Title section -->
@@ -338,6 +200,7 @@
 
     </section>
 
+    <!-- MOBILE VIEW -->
     <section class="mobileV">
 
         <!-- Title Section -->
@@ -351,6 +214,8 @@
                 </center>
             </div>
         </div>
+
+         <!-- Title Section END -->
 
 
         <!-- Class Info Section -->
@@ -385,6 +250,8 @@
             </div>
         </div>
 
+        <!-- Class INFO section END-->
+
         <!-- Projects Section -->
         <div style="margin-top: 10vh; margin-bottom: 10vh;" id="projects-section-mobile">
             <center style="font-size: 40px; font-weight: 600;">Projects</center>
@@ -398,7 +265,7 @@
             </center>
             -->
 
-
+            <!-- Project # 1-->
             <div class="d-flex justify-content-center">
 
                 <a href="https://replit.com/@HarshitaBhardw1/Assignment-4-String-Shortener" target="new">
@@ -413,6 +280,7 @@
                 </a>
             </div>
 
+            <!-- Project # 2-->
             <div class="d-flex justify-content-center">
 
                 <a href="https://replit.com/@HarshitaBhardw1/Assignment-3-Crack-the-code#Main.java" target="new">
@@ -427,7 +295,7 @@
                 </a>
             </div>
 
-
+            <!-- Project # 3-->
             <div class="d-flex justify-content-center">
 
                 <a href="https://replit.com/@HarshitaBhardw1/Assignment-1-Movie-Ratings#Main.java" target="new">
@@ -442,10 +310,8 @@
                 </a>
             </div>
 
-
-
         </div>
-
+        <!-- Projects Section Mobile END-->
 
 
     </section>
